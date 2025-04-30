@@ -2,7 +2,6 @@ import Text.ParserCombinators.ReadP (string)
 import Data.Time.Format.ISO8601 (yearFormat)
 data Huffman = Hoja Int Char | Nodo Int Huffman Huffman deriving (Eq,Ord)
 
-
 --Función que sirve para obtener el valor de un nodo de Huffman, independientemende de si es de tipo Hoja o Nodo
 valor::Huffman -> Int
 valor (Hoja i _) = i
